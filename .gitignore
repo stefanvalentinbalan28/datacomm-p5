@@ -1,0 +1,20 @@
+# Besu chain data
+besu/data/
+
+# Python / Node
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+
+# secrets and generated keys (devices keys are derived from the run seed)
+.env
+edge/keys/*.key
+
+# raw logs: commit them gzipped, not plain
+results/**/*.csv
+!results/**/*.csv.gz
+
+# OS noise
+Thumbs.db
+.DS_Store
