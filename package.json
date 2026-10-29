@@ -1,0 +1,37 @@
+{
+  "name": "datacomm-p5",
+  "version": "1.0.0",
+  "description": "Project 5 - Blockchain-anchored IoT data over MQTT: integrity vs overhead.\r Data Communications, 2026-2027. Team: Galea Andreea, Popescu Daniel, Bălan Ștefan.",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "node": "hardhat node",
+    "clean": "hardhat clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanvalentinbalan28/datacomm-p5.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/stefanvalentinbalan28/datacomm-p5/issues"
+  },
+  "homepage": "https://github.com/stefanvalentinbalan28/datacomm-p5#readme",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^4.0.0",
+    "@types/chai": "^5.2.3",
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^26.6.5",
+    "hardhat": "^3.21.1",
+    "typescript": "^7.0.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}
