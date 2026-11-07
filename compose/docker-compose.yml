@@ -1,16 +1,17 @@
-version: '3.8'
 services:
   mosquitto:
-    image: eclipse-mosquitto:latest
+    image: eclipse-mosquitto:2
     ports:
       - "1883:1883"
     volumes:
       - ./mosquitto.conf:/mosquitto/config/mosquitto.conf
       
   influxdb:
-    image: influxdb:2.7
+    image: influxdb:2.7.12
     ports:
       - "8086:8086"
+    volumes:
+      - influxdb-data:/var/lib/influxdb2
     environment:
       - DOCKER_INFLUXDB_INIT_MODE=setup
       - DOCKER_INFLUXDB_INIT_USERNAME=admin
@@ -20,8 +21,123 @@ services:
       - DOCKER_INFLUXDB_INIT_ADMIN_TOKEN=token_secret_proiect5
 
   grafana:
-    image: grafana/grafana:latest
+    image: grafana/grafana:13.3.0
     ports:
       - "3000:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
+      - ./grafana/provisioning:/etc/grafana/provisioning:ro
     depends_on:
       - influxdb
+
+  # The simulated sensors, with a bad network (netem) on their side only.
+  # Not started by a plain "docker compose up -d": start it with "docker compose up edge"
+  # AFTER the gateway is running.
+  edge:
+    build: ../edge
+    profiles: ["sensors"]
+    init: true             # a tiny init process passes Docker's stop signal on, so the sensors stop at once
+    cap_add:
+      - NET_ADMIN            # needed to change the container's network with tc
+    environment:
+      - MQTT_HOST=mosquitto  # inside Docker, the broker is reached by its service name
+      - SEED=${SEED:-1}        # run settings, e.g.: SEED=3 DEVICES=200 docker compose up edge
+      - DEVICES=${DEVICES:-50}
+    volumes:
+      - ../edge/keys:/app/edge/keys   # public keys are written here, so the gateway can read them
+    # 1) turn on netem on the container's network card, 2) start the sensors
+    command: ["sh", "-c", "tc qdisc add dev eth0 root netem delay 20ms 5ms loss 1% && echo 'netem on: 20ms delay, 5ms jitter, 1% loss' && exec python -u edge/main.py"]
+    depends_on:
+      - mosquitto
+
+  # ---------- Blockchain: Hyperledger Besu, QBFT, 4 validators (block every 2 s) ----------
+  # Each node has its own validator key (besu/nodeN/key); all share besu/genesis.json.
+  # Node 1 is the one the gateway talks to (port 8545); the others find it through --bootnodes.
+
+  besu-node1:
+    image: hyperledger/besu:26.11.0
+    environment:
+      - BESU_OPTS=-Xmx512m   # at most 512 MB of memory per node (risk noted in the plan)
+    volumes:
+      - ../besu/genesis.json:/config/genesis.json:ro
+      - ../besu/node1/key:/config/key:ro
+      - besu-node1-data:/data
+    command: ["--data-path=/data", "--genesis-file=/config/genesis.json",
+              "--node-private-key-file=/config/key",
+              "--p2p-host=172.16.239.11", "--bootnodes=enode://1f365afabfcbd985768d76fe7366087637f9aac99738add5ae44a7bf9ed8cfefbe94071cb0fa99f74069241c1389585ba9acfbe2789257453c3b3c9c5ca58a0e@172.16.239.11:30303",
+              "--rpc-http-enabled", "--rpc-http-host=0.0.0.0", "--host-allowlist=*",
+              "--rpc-http-api=ETH,NET,WEB3,QBFT,TXPOOL",
+              "--min-gas-price=0", "--logging=WARN"]
+    ports:
+      - "8545:8545"        # JSON-RPC: the gateway and chain/deploy.py connect here
+    networks:
+      chain:
+        ipv4_address: 172.16.239.11
+
+  besu-node2:
+    image: hyperledger/besu:26.11.0
+    environment:
+      - BESU_OPTS=-Xmx512m   # at most 512 MB of memory per node (risk noted in the plan)
+    volumes:
+      - ../besu/genesis.json:/config/genesis.json:ro
+      - ../besu/node2/key:/config/key:ro
+      - besu-node2-data:/data
+    command: ["--data-path=/data", "--genesis-file=/config/genesis.json",
+              "--node-private-key-file=/config/key",
+              "--p2p-host=172.16.239.12", "--bootnodes=enode://1f365afabfcbd985768d76fe7366087637f9aac99738add5ae44a7bf9ed8cfefbe94071cb0fa99f74069241c1389585ba9acfbe2789257453c3b3c9c5ca58a0e@172.16.239.11:30303",
+              "--rpc-http-enabled", "--rpc-http-host=0.0.0.0", "--host-allowlist=*",
+              "--rpc-http-api=ETH,NET,WEB3,QBFT,TXPOOL",
+              "--min-gas-price=0", "--logging=WARN"]
+    networks:
+      chain:
+        ipv4_address: 172.16.239.12
+
+  besu-node3:
+    image: hyperledger/besu:26.11.0
+    environment:
+      - BESU_OPTS=-Xmx512m   # at most 512 MB of memory per node (risk noted in the plan)
+    volumes:
+      - ../besu/genesis.json:/config/genesis.json:ro
+      - ../besu/node3/key:/config/key:ro
+      - besu-node3-data:/data
+    command: ["--data-path=/data", "--genesis-file=/config/genesis.json",
+              "--node-private-key-file=/config/key",
+              "--p2p-host=172.16.239.13", "--bootnodes=enode://1f365afabfcbd985768d76fe7366087637f9aac99738add5ae44a7bf9ed8cfefbe94071cb0fa99f74069241c1389585ba9acfbe2789257453c3b3c9c5ca58a0e@172.16.239.11:30303",
+              "--rpc-http-enabled", "--rpc-http-host=0.0.0.0", "--host-allowlist=*",
+              "--rpc-http-api=ETH,NET,WEB3,QBFT,TXPOOL",
+              "--min-gas-price=0", "--logging=WARN"]
+    networks:
+      chain:
+        ipv4_address: 172.16.239.13
+
+  besu-node4:
+    image: hyperledger/besu:26.11.0
+    environment:
+      - BESU_OPTS=-Xmx512m   # at most 512 MB of memory per node (risk noted in the plan)
+    volumes:
+      - ../besu/genesis.json:/config/genesis.json:ro
+      - ../besu/node4/key:/config/key:ro
+      - besu-node4-data:/data
+    command: ["--data-path=/data", "--genesis-file=/config/genesis.json",
+              "--node-private-key-file=/config/key",
+              "--p2p-host=172.16.239.14", "--bootnodes=enode://1f365afabfcbd985768d76fe7366087637f9aac99738add5ae44a7bf9ed8cfefbe94071cb0fa99f74069241c1389585ba9acfbe2789257453c3b3c9c5ca58a0e@172.16.239.11:30303",
+              "--rpc-http-enabled", "--rpc-http-host=0.0.0.0", "--host-allowlist=*",
+              "--rpc-http-api=ETH,NET,WEB3,QBFT,TXPOOL",
+              "--min-gas-price=0", "--logging=WARN"]
+    networks:
+      chain:
+        ipv4_address: 172.16.239.14
+
+networks:
+  chain:
+    ipam:
+      config:
+        - subnet: 172.16.239.0/24
+
+volumes:
+  grafana-data:
+  influxdb-data:
+  besu-node1-data:
+  besu-node2-data:
+  besu-node3-data:
+  besu-node4-data:
