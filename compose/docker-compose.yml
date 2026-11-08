@@ -10,8 +10,8 @@ services:
     image: influxdb:2.7.12
     ports:
       - "8086:8086"
-    volumes:
-      - influxdb-data:/var/lib/influxdb2
+    # fara volum: datele brute stau in results/*.csv, iar un bucket gol la fiecare
+    # pornire da un setup garantat curat si nicio rulare veche amestecata in Grafana
     environment:
       - DOCKER_INFLUXDB_INIT_MODE=setup
       - DOCKER_INFLUXDB_INIT_USERNAME=admin
@@ -136,7 +136,6 @@ networks:
 
 volumes:
   grafana-data:
-  influxdb-data:
   besu-node1-data:
   besu-node2-data:
   besu-node3-data:
