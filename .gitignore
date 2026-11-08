@@ -10,10 +10,11 @@ node_modules/
 # secrets and generated keys (devices keys are derived from the run seed)
 .env
 edge/keys/*.key
+edge/keys/public_keys.json
 
 # raw logs: commit them gzipped, not plain
-results/**/*.csv
-!results/**/*.csv.gz
+**/results/**/*.csv
+!**/results/**/*.csv.gz
 
 # OS noise
 Thumbs.db
@@ -24,3 +25,16 @@ artifacts/
 cache/
 types/
 ignition/deployments/
+
+# written by chain/deploy.py (address of the deployed contract, test key)
+chain/deployment.json
+
+# IDE
+.idea/
+
+# only the run behind the midterm figures is committed; the others are local noise
+results/*
+!results/experiments_20261105_051721/
+
+# study notes stay local, they are not a deliverable
+docs/study_notes*

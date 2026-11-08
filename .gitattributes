@@ -1,0 +1,9 @@
+# Everything here is consumed inside WSL or a Linux container. A CRLF checkout on
+# Windows makes "./start.sh" fail with "bad interpreter" and breaks the configs
+# mounted into Mosquitto and Besu, so these stay LF whatever core.autocrlf says.
+*.sh text eol=lf
+*.py text eol=lf
+*.conf text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+Dockerfile text eol=lf
