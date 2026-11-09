@@ -1,0 +1,67 @@
+{
+  "uid": "p5-live",
+  "title": "P5 - IoT live",
+  "tags": ["datacomm", "proiect5"],
+  "timezone": "browser",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "5s",
+  "time": { "from": "now-30m", "to": "now" },
+  "panels": [
+    {
+      "id": 1,
+      "type": "timeseries",
+      "title": "Mesaje stocate in InfluxDB, pe secunda si pe tip de senzor",
+      "description": "Numara punctele scrise de gateway. La 50 de senzori: traffic ~60/s, vibration ~50/s, air 5/s, alert rar.",
+      "gridPos": { "h": 10, "w": 24, "x": 0, "y": 0 },
+      "datasource": { "type": "influxdb", "uid": "influxdb-p5" },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "msg/s",
+          "min": 0,
+          "custom": { "fillOpacity": 10, "lineWidth": 2, "showPoints": "never" }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": { "displayMode": "table", "placement": "right", "calcs": ["mean", "max"] },
+        "tooltip": { "mode": "multi", "sort": "desc" }
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "influxdb", "uid": "influxdb-p5" },
+          "query": "from(bucket: \"iot_data\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"sensor_measurements\" and r._field == \"seq\")\n  |> group(columns: [\"type\"])\n  |> aggregateWindow(every: 1s, fn: count, createEmpty: false)\n  |> drop(columns: [\"_start\", \"_stop\"])\n  |> rename(columns: {_value: \"msg\"})"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "timeseries",
+      "title": "Mesaje care au primit dovada Merkle (doar modul anchoring)",
+      "description": "Numara punctele carora close_batch le-a adaugat batch_id. Daca ramane plat in timp ce panoul de sus urca, ancorarea nu tine pasul.",
+      "gridPos": { "h": 10, "w": 24, "x": 0, "y": 10 },
+      "datasource": { "type": "influxdb", "uid": "influxdb-p5" },
+      "fieldConfig": {
+        "defaults": {
+          "unit": "msg/s",
+          "min": 0,
+          "color": { "mode": "fixed", "fixedColor": "orange" },
+          "custom": { "fillOpacity": 20, "lineWidth": 2, "showPoints": "never", "drawStyle": "bars" }
+        },
+        "overrides": []
+      },
+      "options": {
+        "legend": { "displayMode": "list", "placement": "bottom" },
+        "tooltip": { "mode": "single" }
+      },
+      "targets": [
+        {
+          "refId": "A",
+          "datasource": { "type": "influxdb", "uid": "influxdb-p5" },
+          "query": "from(bucket: \"iot_data\")\n  |> range(start: v.timeRangeStart, stop: v.timeRangeStop)\n  |> filter(fn: (r) => r._measurement == \"sensor_measurements\" and r._field == \"batch_id\")\n  |> group()\n  |> aggregateWindow(every: 1s, fn: count, createEmpty: false)\n  |> drop(columns: [\"_start\", \"_stop\"])\n  |> rename(columns: {_value: \"ancorate\"})"
+        }
+      ]
+    }
+  ]
+}
