@@ -7,6 +7,8 @@ const config: HardhatUserConfig = {
     version: "0.8.28",
     settings: {
       optimizer: { enabled: true, runs: 200 },
+      // "paris" bytecode runs on our Besu genesis (London rules, no Shanghai/Cancun opcodes)
+      evmVersion: "paris",
     },
   },
 };
