@@ -1,0 +1,372 @@
+Gateway running in mode 'anchoring', batch window 500 ms. Logs: results/experiments_20261105_051721/anchoring_20261105_051931_seed1*.csv. Waiting for data...Connected to Mosquitto, subscribed to sensors/#
+
+✅ 0 saved, ❌ 0 rejected, backlog 0, CPU 1%
+✅ 0 saved, ❌ 0 rejected, backlog 0, CPU 1%
+✅ 32 saved, ❌ 0 rejected, backlog 0, CPU 4%
+⛓  batch 6: 32 messages, root b014ca7d9c6a... confirmed in block 2937
+✅ 112 saved, ❌ 0 rejected, backlog 0, CPU 13%
+✅ 118 saved, ❌ 0 rejected, backlog 0, CPU 17%
+⛓  batch 10: 56 messages, root d7e9290255e9... confirmed in block 2938
+⛓  batch 9: 62 messages, root ee0152f7325c... confirmed in block 2938
+⛓  batch 7: 53 messages, root 79634200bada... confirmed in block 2938
+⛓  batch 8: 58 messages, root 0c2206c84b8f... confirmed in block 2938
+✅ 116 saved, ❌ 0 rejected, backlog 1, CPU 15%
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 17%
+⛓  batch 14: 58 messages, root c4b32a332292... confirmed in block 2939
+⛓  batch 13: 62 messages, root eaa7a2bcf13a... confirmed in block 2939
+⛓  batch 11: 60 messages, root 9482d6acde86... confirmed in block 2939
+⛓  batch 12: 55 messages, root 398e35b5995a... confirmed in block 2939
+✅ 117 saved, ❌ 0 rejected, backlog 0, CPU 14%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 17%
+⛓  batch 15: 59 messages, root e2088df43b06... confirmed in block 2940
+⛓  batch 17: 60 messages, root 0b6092612503... confirmed in block 2940
+⛓  batch 16: 59 messages, root 0f7d882de896... confirmed in block 2940
+⛓  batch 18: 56 messages, root c8de04d65104... confirmed in block 2940
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 15%
+⛓  batch 22: 60 messages, root 0b07e16b6cae... confirmed in block 2941
+⛓  batch 19: 61 messages, root 9d598c09d03f... confirmed in block 2941
+⛓  batch 21: 60 messages, root a02575749e18... confirmed in block 2941
+⛓  batch 20: 59 messages, root 198017ef4452... confirmed in block 2941
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 117 saved, ❌ 0 rejected, backlog 0, CPU 17%
+⛓  batch 23: 60 messages, root 49eeeda721a2... confirmed in block 2942
+⛓  batch 25: 59 messages, root 39eba8194be9... confirmed in block 2942
+⛓  batch 24: 59 messages, root 34a00da4d623... confirmed in block 2942
+⛓  batch 26: 58 messages, root baa0b5a1d77a... confirmed in block 2942
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 15%
+✅ 114 saved, ❌ 0 rejected, backlog 1, CPU 20%
+⛓  batch 28: 59 messages, root 72bbb7ff3971... confirmed in block 2943
+⛓  batch 30: 56 messages, root 54155ae00628... confirmed in block 2943
+⛓  batch 27: 59 messages, root 9b18f16e120e... confirmed in block 2943
+⛓  batch 29: 59 messages, root c9a560f6fa9d... confirmed in block 2943
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 14%
+✅ 115 saved, ❌ 0 rejected, backlog 1, CPU 19%
+⛓  batch 31: 61 messages, root 862ccf9b6505... confirmed in block 2944
+⛓  batch 32: 59 messages, root 10cf66fbd9c2... confirmed in block 2944
+⛓  batch 33: 60 messages, root 322cc5992d0f... confirmed in block 2944
+⛓  batch 34: 56 messages, root b13dffdbd596... confirmed in block 2944
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 17%
+⛓  batch 38: 58 messages, root 0827b6acfdf8... confirmed in block 2945
+⛓  batch 35: 60 messages, root 6d495d5c3a6e... confirmed in block 2945
+⛓  batch 37: 58 messages, root 085473080d8e... confirmed in block 2945
+⛓  batch 36: 60 messages, root 6cefd8e3590a... confirmed in block 2945
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 15%
+✅ 118 saved, ❌ 0 rejected, backlog 0, CPU 15%
+⛓  batch 39: 60 messages, root 8f023084f9c1... confirmed in block 2946
+⛓  batch 41: 62 messages, root edeee8d86e84... confirmed in block 2946
+⛓  batch 40: 58 messages, root 84c45e63a2ff... confirmed in block 2946
+⛓  batch 42: 57 messages, root 4cb0eb799a0e... confirmed in block 2946
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 13%
+✅ 115 saved, ❌ 0 rejected, backlog 0, CPU 19%
+⛓  batch 43: 58 messages, root 4dbc847382dc... confirmed in block 2947
+⛓  batch 44: 61 messages, root 135a5e1fea95... confirmed in block 2947
+⛓  batch 45: 60 messages, root 72f75d1ebd5c... confirmed in block 2947
+⛓  batch 46: 55 messages, root 340e03825652... confirmed in block 2947
+✅ 121 saved, ❌ 0 rejected, backlog 0, CPU 15%
+✅ 115 saved, ❌ 0 rejected, backlog 0, CPU 18%
+⛓  batch 50: 57 messages, root fe333cbbef7f... confirmed in block 2948
+⛓  batch 47: 61 messages, root 7d3341cd93ce... confirmed in block 2948
+⛓  batch 49: 59 messages, root 31dc5051c930... confirmed in block 2948
+⛓  batch 48: 59 messages, root 414e1e701d77... confirmed in block 2948
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 14%
+✅ 115 saved, ❌ 0 rejected, backlog 1, CPU 19%
+⛓  batch 54: 54 messages, root 10e03748a2ec... confirmed in block 2949
+⛓  batch 53: 59 messages, root ee1f7dad1b1b... confirmed in block 2949
+⛓  batch 51: 61 messages, root cd8253ed443c... confirmed in block 2949
+⛓  batch 52: 58 messages, root 5e452ee9b030... confirmed in block 2949
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 15%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 18%
+⛓  batch 55: 61 messages, root dfdec2bb2a95... confirmed in block 2950
+⛓  batch 56: 60 messages, root 628ecec7c226... confirmed in block 2950
+⛓  batch 57: 60 messages, root 0475963f9c8d... confirmed in block 2950
+⛓  batch 58: 56 messages, root 25f94c7dd43a... confirmed in block 2950
+✅ 117 saved, ❌ 0 rejected, backlog 2, CPU 15%
+✅ 118 saved, ❌ 0 rejected, backlog 1, CPU 19%
+⛓  batch 62: 57 messages, root d234ebd18cfd... confirmed in block 2951
+⛓  batch 60: 55 messages, root bc92bcf7d665... confirmed in block 2951
+⛓  batch 59: 62 messages, root 9a7b5e759a37... confirmed in block 2951
+⛓  batch 61: 61 messages, root bfbf6936a5f5... confirmed in block 2951
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 15%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 17%
+⛓  batch 63: 59 messages, root 13e80f45c682... confirmed in block 2952
+⛓  batch 65: 58 messages, root 53d8f6e2753d... confirmed in block 2952
+⛓  batch 64: 61 messages, root 3a3c9d68c8ad... confirmed in block 2952
+⛓  batch 66: 58 messages, root b845482afb52... confirmed in block 2952
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 14%
+✅ 117 saved, ❌ 0 rejected, backlog 0, CPU 16%
+⛓  batch 69: 59 messages, root edd803de2aec... confirmed in block 2953
+⛓  batch 68: 60 messages, root 34f83fce75a5... confirmed in block 2953
+⛓  batch 70: 57 messages, root 0488f836405c... confirmed in block 2953
+⛓  batch 67: 59 messages, root ed1469a83007... confirmed in block 2953
+✅ 118 saved, ❌ 0 rejected, backlog 0, CPU 15%
+✅ 117 saved, ❌ 0 rejected, backlog 0, CPU 18%
+⛓  batch 72: 59 messages, root 4505e7812d0f... confirmed in block 2954
+⛓  batch 73: 56 messages, root 9d5f93eafaaf... confirmed in block 2954
+⛓  batch 71: 60 messages, root 94d144d41ed9... confirmed in block 2954
+⛓  batch 74: 61 messages, root 9cb6036ae25d... confirmed in block 2954
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 14%
+✅ 115 saved, ❌ 0 rejected, backlog 0, CPU 17%
+⛓  batch 75: 60 messages, root f1acfc9a86e2... confirmed in block 2955
+⛓  batch 77: 60 messages, root 698225a85ef6... confirmed in block 2955
+⛓  batch 78: 57 messages, root 75ee58582f5b... confirmed in block 2955
+⛓  batch 76: 58 messages, root cf337e18b401... confirmed in block 2955
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 15%
+✅ 118 saved, ❌ 0 rejected, backlog 0, CPU 16%
+⛓  batch 82: 58 messages, root 90605352741f... confirmed in block 2956
+⛓  batch 81: 60 messages, root 8378353b6e69... confirmed in block 2956
+⛓  batch 79: 61 messages, root 57eb3b0aa959... confirmed in block 2956
+⛓  batch 80: 58 messages, root ad4d952e3d0b... confirmed in block 2956
+✅ 118 saved, ❌ 0 rejected, backlog 0, CPU 14%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 20%
+⛓  batch 83: 59 messages, root 8083493addd6... confirmed in block 2957
+⛓  batch 85: 60 messages, root 34b40cfd4531... confirmed in block 2957
+⛓  batch 84: 57 messages, root 024a4a423d84... confirmed in block 2957
+⛓  batch 86: 58 messages, root 4e5b1741a65a... confirmed in block 2957
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 21%
+⛓  batch 88: 57 messages, root e0d9cbde1026... confirmed in block 2958
+⛓  batch 87: 61 messages, root c83c99086441... confirmed in block 2958
+⛓  batch 90: 56 messages, root 26cfbd1f45a1... confirmed in block 2958
+⛓  batch 89: 61 messages, root b80bf174a3b3... confirmed in block 2958
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 112 saved, ❌ 0 rejected, backlog 2, CPU 18%
+⛓  batch 91: 59 messages, root 13d61383ad8b... confirmed in block 2959
+⛓  batch 94: 52 messages, root 06047110a895... confirmed in block 2959
+⛓  batch 93: 59 messages, root cce39879c464... confirmed in block 2959
+⛓  batch 92: 61 messages, root 33248f9da395... confirmed in block 2959
+✅ 124 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 114 saved, ❌ 0 rejected, backlog 0, CPU 20%
+⛓  batch 98: 55 messages, root 0e90144dcc89... confirmed in block 2960
+⛓  batch 96: 58 messages, root 26b05bfe0a6c... confirmed in block 2960
+⛓  batch 95: 66 messages, root ba435c856ba9... confirmed in block 2960
+⛓  batch 97: 60 messages, root 9bdd79191a1f... confirmed in block 2960
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 15%
+✅ 116 saved, ❌ 0 rejected, backlog 2, CPU 18%
+⛓  batch 102: 55 messages, root d82810b4134f... confirmed in block 2961
+⛓  batch 99: 61 messages, root 6a7407f2061d... confirmed in block 2961
+⛓  batch 101: 59 messages, root e698fd8961bb... confirmed in block 2961
+⛓  batch 100: 58 messages, root 5ad099600f2d... confirmed in block 2961
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 14%
+✅ 118 saved, ❌ 0 rejected, backlog 0, CPU 19%
+⛓  batch 106: 60 messages, root 25b388ce775e... confirmed in block 2962
+⛓  batch 105: 58 messages, root 5132605dcbd4... confirmed in block 2962
+⛓  batch 103: 63 messages, root e89890f9b7aa... confirmed in block 2962
+⛓  batch 104: 59 messages, root aae9de1acbeb... confirmed in block 2962
+✅ 118 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 115 saved, ❌ 0 rejected, backlog 1, CPU 19%
+⛓  batch 110: 57 messages, root 1b090b3d568b... confirmed in block 2963
+⛓  batch 109: 58 messages, root 0b1671ca90cf... confirmed in block 2963
+⛓  batch 108: 59 messages, root c9ab586f0834... confirmed in block 2963
+⛓  batch 107: 59 messages, root ab9144c5df4b... confirmed in block 2963
+✅ 117 saved, ❌ 0 rejected, backlog 1, CPU 13%
+✅ 118 saved, ❌ 0 rejected, backlog 1, CPU 19%
+⛓  batch 111: 58 messages, root acb8cf2c9ad7... confirmed in block 2964
+⛓  batch 113: 63 messages, root 9c0b0a2b17a5... confirmed in block 2964
+⛓  batch 114: 56 messages, root d22fc38b3483... confirmed in block 2964
+⛓  batch 112: 58 messages, root 3a89e721fbc2... confirmed in block 2964
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 15%
+✅ 115 saved, ❌ 0 rejected, backlog 0, CPU 16%
+⛓  batch 118: 55 messages, root b759bb6ec8de... confirmed in block 2965
+⛓  batch 115: 61 messages, root b3968cbce2cd... confirmed in block 2965
+⛓  batch 117: 60 messages, root 2b94d4de3a14... confirmed in block 2965
+⛓  batch 116: 59 messages, root 242d96fc1fff... confirmed in block 2965
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 15%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 17%
+⛓  batch 122: 54 messages, root f6f0c66703c2... confirmed in block 2966
+⛓  batch 121: 60 messages, root c972b3c43807... confirmed in block 2966
+⛓  batch 119: 60 messages, root f5e650b4a364... confirmed in block 2966
+⛓  batch 120: 60 messages, root 91add4c0416c... confirmed in block 2966
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 14%
+✅ 115 saved, ❌ 0 rejected, backlog 0, CPU 16%
+⛓  batch 123: 63 messages, root d51eabe43044... confirmed in block 2967
+⛓  batch 125: 58 messages, root e74c89663686... confirmed in block 2967
+⛓  batch 126: 57 messages, root a59a6a2c03cc... confirmed in block 2967
+⛓  batch 124: 58 messages, root 1cdad86824ff... confirmed in block 2967
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 19%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 19%
+⛓  batch 130: 55 messages, root 1a432f11b2b6... confirmed in block 2968
+⛓  batch 127: 61 messages, root f6504c024f8c... confirmed in block 2968
+⛓  batch 129: 59 messages, root 58ac81fb168b... confirmed in block 2968
+⛓  batch 128: 59 messages, root c39660b23965... confirmed in block 2968
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 13%
+✅ 115 saved, ❌ 0 rejected, backlog 0, CPU 16%
+⛓  batch 133: 58 messages, root 3a89af441b20... confirmed in block 2969
+⛓  batch 132: 58 messages, root 554978b69752... confirmed in block 2969
+⛓  batch 131: 64 messages, root 21ee1b1244e3... confirmed in block 2969
+⛓  batch 134: 57 messages, root 34e452758d2f... confirmed in block 2969
+✅ 121 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 114 saved, ❌ 0 rejected, backlog 0, CPU 17%
+⛓  batch 138: 56 messages, root 56dc2520a99c... confirmed in block 2970
+⛓  batch 135: 61 messages, root ed9b0aa8d4a8... confirmed in block 2970
+⛓  batch 137: 59 messages, root 06110926d49b... confirmed in block 2970
+⛓  batch 136: 59 messages, root cd0745d7e5b3... confirmed in block 2970
+✅ 121 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 114 saved, ❌ 0 rejected, backlog 0, CPU 18%
+⛓  batch 141: 58 messages, root 4303e87e2353... confirmed in block 2971
+⛓  batch 139: 61 messages, root d406cdea6631... confirmed in block 2971
+⛓  batch 140: 59 messages, root cd0a81c6ce54... confirmed in block 2971
+⛓  batch 142: 57 messages, root f771a7ab08ff... confirmed in block 2971
+✅ 121 saved, ❌ 0 rejected, backlog 0, CPU 15%
+✅ 115 saved, ❌ 0 rejected, backlog 0, CPU 17%
+⛓  batch 146: 58 messages, root 8218db72d2c4... confirmed in block 2972
+⛓  batch 143: 61 messages, root c4d7d1220da5... confirmed in block 2972
+⛓  batch 144: 60 messages, root e8dc492fcad7... confirmed in block 2972
+⛓  batch 145: 57 messages, root 1b454e755ef3... confirmed in block 2972
+✅ 118 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 18%
+⛓  batch 147: 59 messages, root de6f0bce180c... confirmed in block 2973
+⛓  batch 149: 59 messages, root 8202a52962ce... confirmed in block 2973
+⛓  batch 148: 59 messages, root eb953e2caff4... confirmed in block 2973⛓  batch 150: 57 messages, root d4987e9c01c1... confirmed in block 2973
+
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 18%
+⛓  batch 154: 58 messages, root 9c70698a7615... confirmed in block 2974
+⛓  batch 152: 59 messages, root cd64f2b80ee3... confirmed in block 2974
+⛓  batch 151: 61 messages, root 877f97e212dd... confirmed in block 2974
+⛓  batch 153: 58 messages, root b1e5d3cae63f... confirmed in block 2974
+✅ 117 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 18%
+⛓  batch 155: 61 messages, root 9b4efb80331a... confirmed in block 2975
+⛓  batch 157: 61 messages, root 4cddc1f38e7c... confirmed in block 2975
+⛓  batch 156: 56 messages, root eb1271690ba7... confirmed in block 2975
+⛓  batch 158: 56 messages, root 53d9e6efe2a9... confirmed in block 2975
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 15%
+✅ 116 saved, ❌ 0 rejected, backlog 1, CPU 17%
+⛓  batch 162: 58 messages, root 0636a78a7d37... confirmed in block 2976
+⛓  batch 161: 58 messages, root 9fd1045b8d12... confirmed in block 2976
+⛓  batch 159: 61 messages, root 138e7c3a1976... confirmed in block 2976
+⛓  batch 160: 60 messages, root 8a922f8c4bcf... confirmed in block 2976
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 16%
+⛓  batch 166: 57 messages, root 3e1c9276d33e... confirmed in block 2977
+⛓  batch 163: 61 messages, root a50f6df31258... confirmed in block 2977
+⛓  batch 165: 58 messages, root 4bb3e7816c88... confirmed in block 2977
+⛓  batch 164: 59 messages, root fcabbaf77885... confirmed in block 2977
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 114 saved, ❌ 0 rejected, backlog 1, CPU 17%
+⛓  batch 170: 57 messages, root 0c1f47f6b966... confirmed in block 2978
+⛓  batch 167: 61 messages, root dcb1184fe10c... confirmed in block 2978
+⛓  batch 169: 56 messages, root 83395c278c65... confirmed in block 2978
+⛓  batch 168: 59 messages, root 358d5be1e986... confirmed in block 2978
+✅ 121 saved, ❌ 0 rejected, backlog 0, CPU 14%
+✅ 115 saved, ❌ 0 rejected, backlog 2, CPU 20%
+⛓  batch 172: 61 messages, root 48f4241b6934... confirmed in block 2979
+⛓  batch 174: 56 messages, root 111d286c5a6b... confirmed in block 2979
+⛓  batch 173: 59 messages, root baeb2725cbbb... confirmed in block 2979
+⛓  batch 171: 62 messages, root 6f131ca87b61... confirmed in block 2979
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 14%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 18%
+⛓  batch 178: 58 messages, root 0df7b3c19226... confirmed in block 2980
+⛓  batch 175: 61 messages, root b763049b60bc... confirmed in block 2980
+⛓  batch 177: 60 messages, root 95249037286f... confirmed in block 2980
+⛓  batch 176: 57 messages, root e820d1b15420... confirmed in block 2980
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 15%
+✅ 117 saved, ❌ 0 rejected, backlog 0, CPU 19%
+⛓  batch 182: 59 messages, root a8a1735241a7... confirmed in block 2981
+⛓  batch 179: 60 messages, root 31c8b3a6859e... confirmed in block 2981
+⛓  batch 181: 58 messages, root 07d951ab0f39... confirmed in block 2981
+⛓  batch 180: 59 messages, root 0fc3a3b14c0e... confirmed in block 2981
+✅ 117 saved, ❌ 0 rejected, backlog 0, CPU 15%
+✅ 117 saved, ❌ 0 rejected, backlog 0, CPU 18%
+⛓  batch 186: 56 messages, root f11a93fe5dd7... confirmed in block 2982
+⛓  batch 185: 61 messages, root 5add1dfa6e82... confirmed in block 2982
+⛓  batch 183: 60 messages, root 57365e050f17... confirmed in block 2982
+⛓  batch 184: 56 messages, root 90e1cdf5e0aa... confirmed in block 2982
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 14%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 19%
+⛓  batch 187: 60 messages, root 38bb6aacd2f9... confirmed in block 2983
+⛓  batch 190: 56 messages, root b72d454c4558... confirmed in block 2983
+⛓  batch 188: 60 messages, root 3dc7e9291683... confirmed in block 2983
+⛓  batch 189: 60 messages, root b2128ed27863... confirmed in block 2983
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 14%
+✅ 118 saved, ❌ 0 rejected, backlog 0, CPU 17%
+⛓  batch 194: 58 messages, root 62ce6e819d94... confirmed in block 2984
+⛓  batch 191: 61 messages, root bb5b16a3d1f0... confirmed in block 2984
+⛓  batch 193: 60 messages, root 769bb961a625... confirmed in block 2984
+⛓  batch 192: 58 messages, root 17afd24916a3... confirmed in block 2984
+✅ 118 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 117 saved, ❌ 0 rejected, backlog 0, CPU 17%
+⛓  batch 195: 59 messages, root b152d2290bc2... confirmed in block 2985
+⛓  batch 198: 58 messages, root b59802d3a655... confirmed in block 2985
+⛓  batch 197: 58 messages, root c7e6cd6c5b9e... confirmed in block 2985
+⛓  batch 196: 59 messages, root 958c9ec396cd... confirmed in block 2985
+✅ 117 saved, ❌ 0 rejected, backlog 0, CPU 14%
+✅ 118 saved, ❌ 0 rejected, backlog 0, CPU 19%
+⛓  batch 199: 59 messages, root 3775b93bc5f0... confirmed in block 2986
+⛓  batch 201: 59 messages, root 1d02df0a9993... confirmed in block 2986
+⛓  batch 200: 59 messages, root bdc3dca5f6b7... confirmed in block 2986
+⛓  batch 202: 58 messages, root 635348893ec2... confirmed in block 2986
+✅ 118 saved, ❌ 0 rejected, backlog 0, CPU 13%
+✅ 117 saved, ❌ 0 rejected, backlog 0, CPU 18%
+⛓  batch 203: 60 messages, root 79c1cfa17594... confirmed in block 2987
+⛓  batch 206: 58 messages, root 4b99333029e7... confirmed in block 2987
+⛓  batch 204: 59 messages, root d254ee6b2cbe... confirmed in block 2987
+⛓  batch 205: 59 messages, root dfea6236f9ed... confirmed in block 2987
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 19%
+⛓  batch 209: 57 messages, root 92a3a8e6b7f4... confirmed in block 2988
+⛓  batch 207: 58 messages, root 76f1ad046964... confirmed in block 2988
+⛓  batch 208: 61 messages, root 0ce8e3623701... confirmed in block 2988
+⛓  batch 210: 58 messages, root 4375e8c3b645... confirmed in block 2988
+✅ 117 saved, ❌ 0 rejected, backlog 0, CPU 15%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 17%
+⛓  batch 213: 59 messages, root 1b9686e32de8... confirmed in block 2989
+⛓  batch 211: 60 messages, root 037f7643bc15... confirmed in block 2989
+⛓  batch 212: 58 messages, root b8fa1698ff41... confirmed in block 2989
+⛓  batch 214: 57 messages, root 0b7027596395... confirmed in block 2989
+✅ 122 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 114 saved, ❌ 0 rejected, backlog 0, CPU 19%
+⛓  batch 217: 57 messages, root 64bba9fe7d52... confirmed in block 2990
+⛓  batch 215: 60 messages, root 55a16d33e1d1... confirmed in block 2990
+⛓  batch 216: 62 messages, root 30decf1feda8... confirmed in block 2990
+⛓  batch 218: 57 messages, root 5bb79f393e03... confirmed in block 2990
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 115 saved, ❌ 0 rejected, backlog 0, CPU 17%
+⛓  batch 220: 59 messages, root e9321b71b000... confirmed in block 2991
+⛓  batch 222: 55 messages, root f4e794eeb967... confirmed in block 2991
+⛓  batch 219: 61 messages, root 7ba851a4f044... confirmed in block 2991
+⛓  batch 221: 60 messages, root 67dcf4685acc... confirmed in block 2991
+✅ 120 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 19%
+⛓  batch 226: 56 messages, root 8a44e0d9214a... confirmed in block 2992
+⛓  batch 223: 61 messages, root c5261f7558ce... confirmed in block 2992
+⛓  batch 225: 59 messages, root 5e0c039a7ef0... confirmed in block 2992
+⛓  batch 224: 59 messages, root 078af9e559d3... confirmed in block 2992
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 14%
+✅ 117 saved, ❌ 0 rejected, backlog 0, CPU 19%
+⛓  batch 229: 59 messages, root 82e0283ca685... confirmed in block 2993
+⛓  batch 227: 61 messages, root 5077cc4d37ce... confirmed in block 2993
+⛓  batch 228: 59 messages, root 3e1a9053c6a7... confirmed in block 2993
+⛓  batch 230: 57 messages, root ba77426e8a92... confirmed in block 2993
+✅ 118 saved, ❌ 0 rejected, backlog 0, CPU 15%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 17%
+⛓  batch 231: 59 messages, root 9d3db483e283... confirmed in block 2994
+⛓  batch 232: 60 messages, root b3018ca5243b... confirmed in block 2994
+⛓  batch 234: 57 messages, root 298d4bd9107d... confirmed in block 2994
+⛓  batch 233: 59 messages, root 13e2bebd23f5... confirmed in block 2994
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 16%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 17%
+⛓  batch 238: 57 messages, root e9ff0635ea6c... confirmed in block 2995
+⛓  batch 235: 60 messages, root 22a185b226a4... confirmed in block 2995
+⛓  batch 237: 58 messages, root b32b4d0a33d0... confirmed in block 2995
+⛓  batch 236: 59 messages, root f5c57e083bff... confirmed in block 2995
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 15%
+✅ 116 saved, ❌ 0 rejected, backlog 0, CPU 15%
+⛓  batch 242: 57 messages, root 2e433187a34e... confirmed in block 2996
+⛓  batch 241: 61 messages, root f9f70c8073b5... confirmed in block 2996⛓  batch 239: 61 messages, root 9ec2d14e2288... confirmed in block 2996
+
+⛓  batch 240: 57 messages, root 185d31cfb00a... confirmed in block 2996
+✅ 119 saved, ❌ 0 rejected, backlog 0, CPU 14%
+✅ 71 saved, ❌ 0 rejected, backlog 0, CPU 16%
+⛓  batch 243: 60 messages, root 27d5080355ff... confirmed in block 2997
+⛓  batch 245: 60 messages, root 0acb13b7f9d9... confirmed in block 2997
+⛓  batch 244: 59 messages, root 05d7b1d149d7... confirmed in block 2997
+⛓  batch 246: 11 messages, root 78a2f1992fd2... confirmed in block 2997
+✅ 0 saved, ❌ 0 rejected, backlog 0, CPU 8%
+✅ 0 saved, ❌ 0 rejected, backlog 0, CPU 1%
+✅ 0 saved, ❌ 0 rejected, backlog 0, CPU 0%
+✅ 0 saved, ❌ 0 rejected, backlog 0, CPU 1%
+
+Stopped.
