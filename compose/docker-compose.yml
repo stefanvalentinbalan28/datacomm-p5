@@ -30,6 +30,31 @@ services:
     depends_on:
       - influxdb
 
+  # Gateway-ul, in container: vorbeste cu mosquitto/influxdb pe numele serviciului
+  # si cu lantul pe besu-node1. Nu porneste la un "docker compose up -d" simplu,
+  # pentru ca trebuie sa urce DUPA ce contractul e pe lant:
+  #   docker compose --profile app up -d gateway
+  gateway:
+    build: ../gateway
+    profiles: ["app"]
+    init: true
+    stop_signal: SIGINT      # gateway-ul isi inchide CSV-urile pe SIGINT (vezi finally din gateway.py)
+    working_dir: /app
+    volumes:
+      - ../:/app             # codul, cheile publice, chain/deployment.json si results/
+    environment:
+      - MQTT_HOST=mosquitto
+      - INFLUX_URL=http://influxdb:8086
+      - RPC_URL=http://besu-node1:8545
+      - BATCH_MS=${BATCH_MS:-500}
+    command: ["python", "-u", "gateway/gateway.py", "${MODE:-anchoring}"]
+    depends_on:
+      - mosquitto
+      - influxdb
+    networks:
+      default:
+      chain:                 # ca sa ajunga la validatori
+
   # The simulated sensors, with a bad network (netem) on their side only.
   # Not started by a plain "docker compose up -d": start it with "docker compose up edge"
   # AFTER the gateway is running.
